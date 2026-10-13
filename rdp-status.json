@@ -1,6 +1,6 @@
 {
-  "active": false,
-  "hostname": "rdpfree-2",
+  "active": true,
+  "hostname": "rdpfree-3",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
@@ -13,13 +13,13 @@
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-13T13:40:55Z",
-  "expires_at": "2026-10-13T19:35:55Z",
+  "started_at": "2026-10-13T13:45:11Z",
+  "expires_at": "2026-10-13T19:40:11Z",
   "duration_menit": 355,
-  "run_id": "38406909572",
+  "run_id": "38407492143",
   "run_attempt": "1",
-  "run_number": "2",
-  "run_url": "https://github.com/giangphuvip/Vv/actions/runs/38406909572",
+  "run_number": "3",
+  "run_url": "https://github.com/giangphuvip/Vv/actions/runs/38407492143",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -39,15 +39,19 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "mode": "tailscale",
     "tailscale": {
-      "status": "failed",
-      "note": "Tailscale menolak koneksi. Periksa masa berlaku auth key dan persetujuan perangkat di tailnet.",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
-    }
+      "ip": "100.108.53.16",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "hostname": "rdpfree-3",
+      "status": "ok",
+      "magicdns": "rdpfree-3.tail8087b0.ts.net."
+    },
+    "mode": "tailscale"
   },
-  "stopped_at": "2026-10-13T13:41:06Z"
+  "media": {
+    "microphone": "rdp_capture_enabled",
+    "wallpaper": "xyverse_configured_for_user_logon",
+    "audio_output": "rdp_playback_enabled",
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
+  }
 }
